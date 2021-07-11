@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './home/Home';
+import Details from './details/Details';
 
 export default function Controller() {
 
@@ -10,6 +11,7 @@ export default function Controller() {
         <Router>
             <div className="main-container">
                 <Route exact path="/" render={(props) => <Home {...props} baseUrl={baseUrl}/>}/>
+                <Route exact path="/movie/:id" render={(props) => <Details {...props} baseUrl={baseUrl}/>} />
             </div>
         </Router>
     );
