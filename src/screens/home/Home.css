@@ -1,0 +1,19 @@
+.heading{
+    background-color: #ff9999;
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.grid-upcoming-movies {
+    height: 250px !important;
+    margin: 0 !important;
+    flex-wrap: nowrap !important;
+    transform: translateZ(0px);
+}
+
+.grid-item-upcoming-movies {
+    height: 233px !important;
+    padding: 0 2px !important;
+}
